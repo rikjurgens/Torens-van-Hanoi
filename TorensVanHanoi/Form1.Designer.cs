@@ -44,7 +44,7 @@
 			// labelQuestionOne
 			// 
 			this.labelQuestionOne.AutoSize = true;
-			this.labelQuestionOne.Location = new System.Drawing.Point(26, 63);
+			this.labelQuestionOne.Location = new System.Drawing.Point(46, 63);
 			this.labelQuestionOne.Name = "labelQuestionOne";
 			this.labelQuestionOne.Size = new System.Drawing.Size(213, 17);
 			this.labelQuestionOne.TabIndex = 0;
@@ -53,7 +53,7 @@
 			// labelQuestionThree
 			// 
 			this.labelQuestionThree.AutoSize = true;
-			this.labelQuestionThree.Location = new System.Drawing.Point(26, 229);
+			this.labelQuestionThree.Location = new System.Drawing.Point(46, 229);
 			this.labelQuestionThree.Name = "labelQuestionThree";
 			this.labelQuestionThree.Size = new System.Drawing.Size(260, 17);
 			this.labelQuestionThree.TabIndex = 1;
@@ -61,7 +61,7 @@
 			// 
 			// buttonForLoop
 			// 
-			this.buttonForLoop.Location = new System.Drawing.Point(52, 128);
+			this.buttonForLoop.Location = new System.Drawing.Point(72, 128);
 			this.buttonForLoop.Name = "buttonForLoop";
 			this.buttonForLoop.Size = new System.Drawing.Size(106, 61);
 			this.buttonForLoop.TabIndex = 2;
@@ -79,7 +79,7 @@
 			// 
 			// textBoxCountOne
 			// 
-			this.textBoxCountOne.Location = new System.Drawing.Point(245, 60);
+			this.textBoxCountOne.Location = new System.Drawing.Point(265, 60);
 			this.textBoxCountOne.Name = "textBoxCountOne";
 			this.textBoxCountOne.Size = new System.Drawing.Size(100, 22);
 			this.textBoxCountOne.TabIndex = 4;
@@ -87,7 +87,7 @@
 			// labelQuestionTwo
 			// 
 			this.labelQuestionTwo.AutoSize = true;
-			this.labelQuestionTwo.Location = new System.Drawing.Point(26, 149);
+			this.labelQuestionTwo.Location = new System.Drawing.Point(46, 149);
 			this.labelQuestionTwo.Name = "labelQuestionTwo";
 			this.labelQuestionTwo.Size = new System.Drawing.Size(20, 17);
 			this.labelQuestionTwo.TabIndex = 5;
@@ -96,7 +96,7 @@
 			// labelAnswerThree
 			// 
 			this.labelAnswerThree.AutoSize = true;
-			this.labelAnswerThree.Location = new System.Drawing.Point(287, 229);
+			this.labelAnswerThree.Location = new System.Drawing.Point(307, 229);
 			this.labelAnswerThree.Name = "labelAnswerThree";
 			this.labelAnswerThree.Size = new System.Drawing.Size(0, 17);
 			this.labelAnswerThree.TabIndex = 6;
@@ -104,7 +104,7 @@
 			// labelQuestionFour
 			// 
 			this.labelQuestionFour.AutoSize = true;
-			this.labelQuestionFour.Location = new System.Drawing.Point(26, 301);
+			this.labelQuestionFour.Location = new System.Drawing.Point(46, 301);
 			this.labelQuestionFour.Name = "labelQuestionFour";
 			this.labelQuestionFour.Size = new System.Drawing.Size(167, 17);
 			this.labelQuestionFour.TabIndex = 7;
@@ -113,14 +113,14 @@
 			// labelAnswerFour
 			// 
 			this.labelAnswerFour.AutoSize = true;
-			this.labelAnswerFour.Location = new System.Drawing.Point(199, 301);
+			this.labelAnswerFour.Location = new System.Drawing.Point(219, 301);
 			this.labelAnswerFour.Name = "labelAnswerFour";
 			this.labelAnswerFour.Size = new System.Drawing.Size(0, 17);
 			this.labelAnswerFour.TabIndex = 8;
 			// 
 			// buttonPower
 			// 
-			this.buttonPower.Location = new System.Drawing.Point(164, 128);
+			this.buttonPower.Location = new System.Drawing.Point(184, 128);
 			this.buttonPower.Name = "buttonPower";
 			this.buttonPower.Size = new System.Drawing.Size(106, 61);
 			this.buttonPower.TabIndex = 9;
@@ -130,7 +130,7 @@
 			// 
 			// buttonRecursie
 			// 
-			this.buttonRecursie.Location = new System.Drawing.Point(276, 127);
+			this.buttonRecursie.Location = new System.Drawing.Point(296, 127);
 			this.buttonRecursie.Name = "buttonRecursie";
 			this.buttonRecursie.Size = new System.Drawing.Size(106, 61);
 			this.buttonRecursie.TabIndex = 10;
@@ -141,7 +141,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(427, 395);
+			this.ClientSize = new System.Drawing.Size(479, 395);
 			this.Controls.Add(this.buttonRecursie);
 			this.Controls.Add(this.buttonPower);
 			this.Controls.Add(this.labelAnswerFour);

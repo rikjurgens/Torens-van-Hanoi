@@ -25,7 +25,7 @@ namespace TorensVanHanoi
 			//FOR-Loop Methode
 
 			int input;
-			double moves = 1;
+			ulong moves = 1;
 
 			bool isnumber = int.TryParse(textBoxCountOne.Text, out input);
 			
@@ -49,9 +49,9 @@ namespace TorensVanHanoi
 
 		private void buttonPower_Click(object sender, EventArgs e)
 		{
-			double input;
-			double.TryParse(textBoxCountOne.Text, out input);
-			var result = Math.Pow(2, input) - 1;
+			ulong input;
+			ulong.TryParse(textBoxCountOne.Text, out input);
+			var result = (ulong)(Math.Pow(2, input) - 1);
 			labelAnswerThree.Text = string.Format("{0}", result);
 		}
 
