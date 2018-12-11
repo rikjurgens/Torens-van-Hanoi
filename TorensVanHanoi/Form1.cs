@@ -10,11 +10,33 @@ using System.Windows.Forms;
 
 namespace TorensVanHanoi
 {
-	public partial class Form1 : Form
+	public partial class MainForm : Form
 	{
-		public Form1()
+		public MainForm()
 		{
 			InitializeComponent();
+		}
+
+		private void buttonResult_Click(object sender, EventArgs e)
+		{
+			int input;
+			double moves = 1;
+
+			bool isnumber = int.TryParse(textBoxCountOne.Text, out input);
+			
+			if (isnumber == true && (input > 0 && input <= 64))
+			{
+				for (int i = 1; i < input; i++)
+				{
+					moves = moves * 2 + 1;
+				}
+				labelAnswerThree.Text = moves.ToString();
+			}
+
+			else
+			{
+				MessageBox.Show("Geen geldige invoer.");
+			}
 		}
 	}
 }

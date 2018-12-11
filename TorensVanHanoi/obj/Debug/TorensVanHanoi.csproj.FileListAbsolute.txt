@@ -1,0 +1,10 @@
+C:\Users\rjurg\Documents\Radius College\AMO_1\Periode_2\Project\Torens van Hanoi\Broncode\Torens van Hanoi\TorensVanHanoi\TorensVanHanoi\bin\Debug\TorensVanHanoi.exe.config
+C:\Users\rjurg\Documents\Radius College\AMO_1\Periode_2\Project\Torens van Hanoi\Broncode\Torens van Hanoi\TorensVanHanoi\TorensVanHanoi\bin\Debug\TorensVanHanoi.exe
+C:\Users\rjurg\Documents\Radius College\AMO_1\Periode_2\Project\Torens van Hanoi\Broncode\Torens van Hanoi\TorensVanHanoi\TorensVanHanoi\bin\Debug\TorensVanHanoi.pdb
+C:\Users\rjurg\Documents\Radius College\AMO_1\Periode_2\Project\Torens van Hanoi\Broncode\Torens van Hanoi\TorensVanHanoi\TorensVanHanoi\obj\Debug\TorensVanHanoi.csprojAssemblyReference.cache
+C:\Users\rjurg\Documents\Radius College\AMO_1\Periode_2\Project\Torens van Hanoi\Broncode\Torens van Hanoi\TorensVanHanoi\TorensVanHanoi\obj\Debug\TorensVanHanoi.MainForm.resources
+C:\Users\rjurg\Documents\Radius College\AMO_1\Periode_2\Project\Torens van Hanoi\Broncode\Torens van Hanoi\TorensVanHanoi\TorensVanHanoi\obj\Debug\TorensVanHanoi.Properties.Resources.resources
+C:\Users\rjurg\Documents\Radius College\AMO_1\Periode_2\Project\Torens van Hanoi\Broncode\Torens van Hanoi\TorensVanHanoi\TorensVanHanoi\obj\Debug\TorensVanHanoi.csproj.GenerateResource.cache
+C:\Users\rjurg\Documents\Radius College\AMO_1\Periode_2\Project\Torens van Hanoi\Broncode\Torens van Hanoi\TorensVanHanoi\TorensVanHanoi\obj\Debug\TorensVanHanoi.csproj.CoreCompileInputs.cache
+C:\Users\rjurg\Documents\Radius College\AMO_1\Periode_2\Project\Torens van Hanoi\Broncode\Torens van Hanoi\TorensVanHanoi\TorensVanHanoi\obj\Debug\TorensVanHanoi.exe
+C:\Users\rjurg\Documents\Radius College\AMO_1\Periode_2\Project\Torens van Hanoi\Broncode\Torens van Hanoi\TorensVanHanoi\TorensVanHanoi\obj\Debug\TorensVanHanoi.pdb
