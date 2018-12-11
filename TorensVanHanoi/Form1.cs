@@ -17,8 +17,13 @@ namespace TorensVanHanoi
 			InitializeComponent();
 		}
 
+
+		
 		private void buttonResult_Click(object sender, EventArgs e)
 		{
+
+			//FOR-Loop Methode
+
 			int input;
 			double moves = 1;
 
@@ -37,6 +42,13 @@ namespace TorensVanHanoi
 			{
 				MessageBox.Show("Geen geldige invoer.");
 			}
+
+
+			//Machtsverheffings Methode
+
+
+
+			//Recursie Methode
 		}
 	}
 }
