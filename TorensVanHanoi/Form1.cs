@@ -19,7 +19,7 @@ namespace TorensVanHanoi
 
 
 		
-		private void buttonResult_Click(object sender, EventArgs e)
+		private void buttonForLoop_Click(object sender, EventArgs e)
 		{
 
 			//FOR-Loop Methode
@@ -42,15 +42,19 @@ namespace TorensVanHanoi
 			{
 				MessageBox.Show("Geen geldige invoer.");
 			}
-
-
-			//Machtsverheffings Methode
-
-
-
-			//Recursie Methode
 		}
 
-		
+
+		//Machtsverheffen Methode
+
+		private void buttonPower_Click(object sender, EventArgs e)
+		{
+			double input;
+			double.TryParse(textBoxCountOne.Text, out input);
+			var result = Math.Pow(2, input) - 1;
+			labelAnswerThree.Text = string.Format("{0}", result);
+		}
+
+		//Recursie Methode
 	}
 }

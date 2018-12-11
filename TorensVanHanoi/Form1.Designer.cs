@@ -30,15 +30,15 @@
 		{
 			this.labelQuestionOne = new System.Windows.Forms.Label();
 			this.labelQuestionThree = new System.Windows.Forms.Label();
-			this.buttonResult = new System.Windows.Forms.Button();
+			this.buttonForLoop = new System.Windows.Forms.Button();
 			this.label3 = new System.Windows.Forms.Label();
 			this.textBoxCountOne = new System.Windows.Forms.TextBox();
 			this.labelQuestionTwo = new System.Windows.Forms.Label();
 			this.labelAnswerThree = new System.Windows.Forms.Label();
 			this.labelQuestionFour = new System.Windows.Forms.Label();
 			this.labelAnswerFour = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
+			this.buttonPower = new System.Windows.Forms.Button();
+			this.buttonRecursie = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// labelQuestionOne
@@ -59,15 +59,15 @@
 			this.labelQuestionThree.TabIndex = 1;
 			this.labelQuestionThree.Text = "3. Het aantal zetten dat je moet doen is:";
 			// 
-			// buttonResult
+			// buttonForLoop
 			// 
-			this.buttonResult.Location = new System.Drawing.Point(52, 128);
-			this.buttonResult.Name = "buttonResult";
-			this.buttonResult.Size = new System.Drawing.Size(106, 61);
-			this.buttonResult.TabIndex = 2;
-			this.buttonResult.Text = "Resulataat (For-Loop)";
-			this.buttonResult.UseVisualStyleBackColor = true;
-			this.buttonResult.Click += new System.EventHandler(this.buttonResult_Click);
+			this.buttonForLoop.Location = new System.Drawing.Point(52, 128);
+			this.buttonForLoop.Name = "buttonForLoop";
+			this.buttonForLoop.Size = new System.Drawing.Size(106, 61);
+			this.buttonForLoop.TabIndex = 2;
+			this.buttonForLoop.Text = "Resulataat (For-Loop)";
+			this.buttonForLoop.UseVisualStyleBackColor = true;
+			this.buttonForLoop.Click += new System.EventHandler(this.buttonForLoop_Click);
 			// 
 			// label3
 			// 
@@ -118,38 +118,39 @@
 			this.labelAnswerFour.Size = new System.Drawing.Size(0, 17);
 			this.labelAnswerFour.TabIndex = 8;
 			// 
-			// button1
+			// buttonPower
 			// 
-			this.button1.Location = new System.Drawing.Point(164, 128);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(106, 61);
-			this.button1.TabIndex = 9;
-			this.button1.Text = "Resulataat (Machtsverheffen)";
-			this.button1.UseVisualStyleBackColor = true;
+			this.buttonPower.Location = new System.Drawing.Point(164, 128);
+			this.buttonPower.Name = "buttonPower";
+			this.buttonPower.Size = new System.Drawing.Size(106, 61);
+			this.buttonPower.TabIndex = 9;
+			this.buttonPower.Text = "Resulataat (Machtsverheffen)";
+			this.buttonPower.UseVisualStyleBackColor = true;
+			this.buttonPower.Click += new System.EventHandler(this.buttonPower_Click);
 			// 
-			// button2
+			// buttonRecursie
 			// 
-			this.button2.Location = new System.Drawing.Point(276, 127);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(106, 61);
-			this.button2.TabIndex = 10;
-			this.button2.Text = "Resulataat (Recursie)";
-			this.button2.UseVisualStyleBackColor = true;
+			this.buttonRecursie.Location = new System.Drawing.Point(276, 127);
+			this.buttonRecursie.Name = "buttonRecursie";
+			this.buttonRecursie.Size = new System.Drawing.Size(106, 61);
+			this.buttonRecursie.TabIndex = 10;
+			this.buttonRecursie.Text = "Resulataat (Recursie)";
+			this.buttonRecursie.UseVisualStyleBackColor = true;
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(427, 395);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
+			this.Controls.Add(this.buttonRecursie);
+			this.Controls.Add(this.buttonPower);
 			this.Controls.Add(this.labelAnswerFour);
 			this.Controls.Add(this.labelQuestionFour);
 			this.Controls.Add(this.labelAnswerThree);
 			this.Controls.Add(this.labelQuestionTwo);
 			this.Controls.Add(this.textBoxCountOne);
 			this.Controls.Add(this.label3);
-			this.Controls.Add(this.buttonResult);
+			this.Controls.Add(this.buttonForLoop);
 			this.Controls.Add(this.labelQuestionThree);
 			this.Controls.Add(this.labelQuestionOne);
 			this.Name = "MainForm";
@@ -163,15 +164,15 @@
 
 		private System.Windows.Forms.Label labelQuestionOne;
 		private System.Windows.Forms.Label labelQuestionThree;
-		private System.Windows.Forms.Button buttonResult;
+		private System.Windows.Forms.Button buttonForLoop;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.TextBox textBoxCountOne;
 		private System.Windows.Forms.Label labelQuestionTwo;
 		private System.Windows.Forms.Label labelAnswerThree;
 		private System.Windows.Forms.Label labelQuestionFour;
 		private System.Windows.Forms.Label labelAnswerFour;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button buttonPower;
+		private System.Windows.Forms.Button buttonRecursie;
 	}
 }
 
