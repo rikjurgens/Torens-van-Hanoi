@@ -55,6 +55,17 @@ namespace TorensVanHanoi
 			labelAnswerThree.Text = string.Format("{0}", result);
 		}
 
+
 		//Recursie Methode
+
+
+		//Button Clear
+		private void buttonClear_Click(object sender, EventArgs e)
+		{
+			textBoxCountOne.Text = "";
+			labelAnswerThree.Text = "";
+		}
+
+		
 	}
 }

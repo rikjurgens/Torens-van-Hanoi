@@ -39,6 +39,7 @@
 			this.labelAnswerFour = new System.Windows.Forms.Label();
 			this.buttonPower = new System.Windows.Forms.Button();
 			this.buttonRecursie = new System.Windows.Forms.Button();
+			this.buttonClear = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// labelQuestionOne
@@ -137,11 +138,22 @@
 			this.buttonRecursie.Text = "Resulataat (Recursie)";
 			this.buttonRecursie.UseVisualStyleBackColor = true;
 			// 
+			// buttonClear
+			// 
+			this.buttonClear.Location = new System.Drawing.Point(372, 57);
+			this.buttonClear.Name = "buttonClear";
+			this.buttonClear.Size = new System.Drawing.Size(75, 29);
+			this.buttonClear.TabIndex = 11;
+			this.buttonClear.Text = "Clear";
+			this.buttonClear.UseVisualStyleBackColor = true;
+			this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(479, 395);
+			this.Controls.Add(this.buttonClear);
 			this.Controls.Add(this.buttonRecursie);
 			this.Controls.Add(this.buttonPower);
 			this.Controls.Add(this.labelAnswerFour);
@@ -173,6 +185,7 @@
 		private System.Windows.Forms.Label labelAnswerFour;
 		private System.Windows.Forms.Button buttonPower;
 		private System.Windows.Forms.Button buttonRecursie;
+		private System.Windows.Forms.Button buttonClear;
 	}
 }
 
