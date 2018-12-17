@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Numerics;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -49,10 +50,20 @@ namespace TorensVanHanoi
 
 		private void buttonPower_Click(object sender, EventArgs e)
 		{
-			ulong input;
-			ulong.TryParse(textBoxCountOne.Text, out input);
-			var result = (ulong)(Math.Pow(2, input) - 1);
-			labelAnswerThree.Text = string.Format("{0}", result);
+			int input;
+			BigInteger answer;
+			int.TryParse(textBoxCountOne.Text, out input);
+
+			if (input <= 64 && input >= 1)
+			{
+				answer = (BigInteger)(Math.Pow(2, input) - 1);
+				labelAnswerThree.Text = string.Format("{0}", answer);
+			}
+
+			else
+			{
+				MessageBox.Show("Je geen geldige invoer gedaan!");
+			}
 		}
 
 
