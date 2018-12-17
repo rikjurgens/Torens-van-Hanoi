@@ -84,6 +84,7 @@
 			this.textBoxCountOne.Name = "textBoxCountOne";
 			this.textBoxCountOne.Size = new System.Drawing.Size(100, 22);
 			this.textBoxCountOne.TabIndex = 4;
+			this.textBoxCountOne.Click += new System.EventHandler(this.buttonRecursie_Click);
 			// 
 			// labelQuestionTwo
 			// 
@@ -137,6 +138,7 @@
 			this.buttonRecursie.TabIndex = 10;
 			this.buttonRecursie.Text = "Resulataat (Recursie)";
 			this.buttonRecursie.UseVisualStyleBackColor = true;
+			this.buttonRecursie.Click += new System.EventHandler(this.buttonRecursie_Click);
 			// 
 			// buttonClear
 			// 
@@ -152,7 +154,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(479, 395);
+			this.ClientSize = new System.Drawing.Size(561, 395);
 			this.Controls.Add(this.buttonClear);
 			this.Controls.Add(this.buttonRecursie);
 			this.Controls.Add(this.buttonPower);

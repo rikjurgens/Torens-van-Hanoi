@@ -26,17 +26,17 @@ namespace TorensVanHanoi
 			//FOR-Loop Methode
 
 			int input;
-			ulong moves = 1;
+			BigInteger moves = 1;
 
 			bool isnumber = int.TryParse(textBoxCountOne.Text, out input);
-			
-			if (isnumber == true && (input > 0 && input <= 64))
+
+			if (isnumber == true && (input > 0 && input <=64))
 			{
 				for (int i = 1; i < input; i++)
 				{
 					moves = moves * 2 + 1;
 				}
-				labelAnswerThree.Text = moves.ToString();
+				labelAnswerThree.Text = string.Format("{0} stappen" , moves.ToString());
 			}
 
 			else
@@ -54,10 +54,10 @@ namespace TorensVanHanoi
 			BigInteger answer;
 			int.TryParse(textBoxCountOne.Text, out input);
 
-			if (input <= 64 && input >= 1)
+			if (input <=64 && input >= 1)
 			{
-				answer = (BigInteger)(Math.Pow(2, input) - 1);
-				labelAnswerThree.Text = string.Format("{0}", answer);
+				answer = (BigInteger)(Math.Pow(2, input) -1);
+				labelAnswerThree.Text = string.Format("{0} stappen", answer);
 			}
 
 			else
@@ -68,6 +68,38 @@ namespace TorensVanHanoi
 
 
 		//Recursie Methode
+
+		private void buttonRecursie_Click(object sender, EventArgs e)
+		{
+			double schijven;
+			bool gelukt = double.TryParse(textBoxCountOne.Text, out schijven);
+
+			if (!gelukt)
+			{
+				
+			}
+
+			else
+			{
+				double result = count (0, 1, schijven);
+				labelAnswerThree.Text = string.Format("{0} stappen", result);
+			}
+		}
+
+		static double count(double zetten, double huidigeschijf, double schijven)
+		{
+			if (huidigeschijf > schijven)
+			{
+				return zetten;
+			}
+			else
+			{
+				zetten = zetten * 2 + 1;
+				double resultaat = count(zetten, huidigeschijf + 1, schijven);
+
+				return resultaat;
+			}
+		}
 
 
 		//Button Clear
