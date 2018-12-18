@@ -50,19 +50,22 @@ namespace TorensVanHanoi
 
 		private void buttonPower_Click(object sender, EventArgs e)
 		{
-			int input;
-			BigInteger answer;
-			int.TryParse(textBoxCountOne.Text, out input);
+			
+			ulong number;
+			ulong result = 0;
 
-			if (input <=64 && input >= 1)
+			number = ulong.Parse(textBoxCountOne.Text);
+
+			if (number > 0 && number <= 64)
 			{
-				answer = (BigInteger)(Math.Pow(2, input) -1);
-				labelAnswerThree.Text = string.Format("{0} stappen", answer);
-			}
+				result = (ulong)Math.Pow(2, number) - 1;
 
+				labelAnswerThree.Text = string.Format("{0} stappen", result.ToString());
+			}
+		
 			else
 			{
-				MessageBox.Show("Je geen geldige invoer gedaan!");
+				MessageBox.Show("Geen geldige invoer.");
 			}
 		}
 
