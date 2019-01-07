@@ -33,7 +33,6 @@
 			this.buttonForLoop = new System.Windows.Forms.Button();
 			this.label3 = new System.Windows.Forms.Label();
 			this.textBoxCountOne = new System.Windows.Forms.TextBox();
-			this.labelQuestionTwo = new System.Windows.Forms.Label();
 			this.labelAnswerThree = new System.Windows.Forms.Label();
 			this.labelQuestionFour = new System.Windows.Forms.Label();
 			this.labelAnswerFour = new System.Windows.Forms.Label();
@@ -42,19 +41,20 @@
 			this.buttonClear = new System.Windows.Forms.Button();
 			this.mileniaCount = new System.Windows.Forms.Label();
 			this.groupBoxTime = new System.Windows.Forms.GroupBox();
+			this.monthCount = new System.Windows.Forms.Label();
+			this.secondLabel = new System.Windows.Forms.Label();
+			this.minuteLabel = new System.Windows.Forms.Label();
+			this.hourLabel = new System.Windows.Forms.Label();
+			this.dayLabel = new System.Windows.Forms.Label();
+			this.monthLabel = new System.Windows.Forms.Label();
+			this.yearLabel = new System.Windows.Forms.Label();
+			this.mileniaLabel = new System.Windows.Forms.Label();
 			this.secondCount = new System.Windows.Forms.Label();
 			this.minuteCount = new System.Windows.Forms.Label();
 			this.hourCount = new System.Windows.Forms.Label();
 			this.dayCount = new System.Windows.Forms.Label();
 			this.yearCount = new System.Windows.Forms.Label();
-			this.mileniaLabel = new System.Windows.Forms.Label();
-			this.yearLabel = new System.Windows.Forms.Label();
-			this.monthLabel = new System.Windows.Forms.Label();
-			this.dayLabel = new System.Windows.Forms.Label();
-			this.hourLabel = new System.Windows.Forms.Label();
-			this.minuteLabel = new System.Windows.Forms.Label();
-			this.secondLabel = new System.Windows.Forms.Label();
-			this.monthCount = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
 			this.groupBoxTime.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -78,11 +78,11 @@
 			// 
 			// buttonForLoop
 			// 
-			this.buttonForLoop.Location = new System.Drawing.Point(72, 128);
+			this.buttonForLoop.Location = new System.Drawing.Point(72, 147);
 			this.buttonForLoop.Name = "buttonForLoop";
 			this.buttonForLoop.Size = new System.Drawing.Size(106, 61);
 			this.buttonForLoop.TabIndex = 2;
-			this.buttonForLoop.Text = "Resulataat (For-Loop)";
+			this.buttonForLoop.Text = "For-Loop";
 			this.buttonForLoop.UseVisualStyleBackColor = true;
 			this.buttonForLoop.Click += new System.EventHandler(this.buttonForLoop_Click);
 			// 
@@ -97,19 +97,11 @@
 			// textBoxCountOne
 			// 
 			this.textBoxCountOne.Location = new System.Drawing.Point(265, 60);
+			this.textBoxCountOne.MaxLength = 2;
 			this.textBoxCountOne.Name = "textBoxCountOne";
 			this.textBoxCountOne.Size = new System.Drawing.Size(100, 22);
 			this.textBoxCountOne.TabIndex = 4;
 			this.textBoxCountOne.Click += new System.EventHandler(this.buttonRecursie_Click);
-			// 
-			// labelQuestionTwo
-			// 
-			this.labelQuestionTwo.AutoSize = true;
-			this.labelQuestionTwo.Location = new System.Drawing.Point(46, 149);
-			this.labelQuestionTwo.Name = "labelQuestionTwo";
-			this.labelQuestionTwo.Size = new System.Drawing.Size(20, 17);
-			this.labelQuestionTwo.TabIndex = 5;
-			this.labelQuestionTwo.Text = "2.";
 			// 
 			// labelAnswerThree
 			// 
@@ -138,21 +130,21 @@
 			// 
 			// buttonPower
 			// 
-			this.buttonPower.Location = new System.Drawing.Point(184, 128);
+			this.buttonPower.Location = new System.Drawing.Point(201, 147);
 			this.buttonPower.Name = "buttonPower";
 			this.buttonPower.Size = new System.Drawing.Size(106, 61);
 			this.buttonPower.TabIndex = 9;
-			this.buttonPower.Text = "Resulataat (Machtsverheffen)";
+			this.buttonPower.Text = "Machtsverheffen";
 			this.buttonPower.UseVisualStyleBackColor = true;
 			this.buttonPower.Click += new System.EventHandler(this.buttonPower_Click);
 			// 
 			// buttonRecursie
 			// 
-			this.buttonRecursie.Location = new System.Drawing.Point(296, 127);
+			this.buttonRecursie.Location = new System.Drawing.Point(331, 147);
 			this.buttonRecursie.Name = "buttonRecursie";
 			this.buttonRecursie.Size = new System.Drawing.Size(106, 61);
 			this.buttonRecursie.TabIndex = 10;
-			this.buttonRecursie.Text = "Resulataat (Recursie)";
+			this.buttonRecursie.Text = "Recursie";
 			this.buttonRecursie.UseVisualStyleBackColor = true;
 			this.buttonRecursie.Click += new System.EventHandler(this.buttonRecursie_Click);
 			// 
@@ -197,6 +189,78 @@
 			this.groupBoxTime.TabIndex = 13;
 			this.groupBoxTime.TabStop = false;
 			this.groupBoxTime.Text = "Tijdsduur";
+			// 
+			// monthCount
+			// 
+			this.monthCount.AutoSize = true;
+			this.monthCount.Location = new System.Drawing.Point(153, 93);
+			this.monthCount.Name = "monthCount";
+			this.monthCount.Size = new System.Drawing.Size(16, 17);
+			this.monthCount.TabIndex = 24;
+			this.monthCount.Text = "0";
+			// 
+			// secondLabel
+			// 
+			this.secondLabel.AutoSize = true;
+			this.secondLabel.Location = new System.Drawing.Point(44, 205);
+			this.secondLabel.Name = "secondLabel";
+			this.secondLabel.Size = new System.Drawing.Size(72, 17);
+			this.secondLabel.TabIndex = 15;
+			this.secondLabel.Text = "Seconden";
+			// 
+			// minuteLabel
+			// 
+			this.minuteLabel.AutoSize = true;
+			this.minuteLabel.Location = new System.Drawing.Point(44, 179);
+			this.minuteLabel.Name = "minuteLabel";
+			this.minuteLabel.Size = new System.Drawing.Size(58, 17);
+			this.minuteLabel.TabIndex = 23;
+			this.minuteLabel.Text = "Minuten";
+			// 
+			// hourLabel
+			// 
+			this.hourLabel.AutoSize = true;
+			this.hourLabel.Location = new System.Drawing.Point(44, 152);
+			this.hourLabel.Name = "hourLabel";
+			this.hourLabel.Size = new System.Drawing.Size(39, 17);
+			this.hourLabel.TabIndex = 22;
+			this.hourLabel.Text = "Uren";
+			// 
+			// dayLabel
+			// 
+			this.dayLabel.AutoSize = true;
+			this.dayLabel.Location = new System.Drawing.Point(44, 124);
+			this.dayLabel.Name = "dayLabel";
+			this.dayLabel.Size = new System.Drawing.Size(50, 17);
+			this.dayLabel.TabIndex = 21;
+			this.dayLabel.Text = "Dagen";
+			// 
+			// monthLabel
+			// 
+			this.monthLabel.AutoSize = true;
+			this.monthLabel.Location = new System.Drawing.Point(44, 93);
+			this.monthLabel.Name = "monthLabel";
+			this.monthLabel.Size = new System.Drawing.Size(67, 17);
+			this.monthLabel.TabIndex = 20;
+			this.monthLabel.Text = "Maanden";
+			// 
+			// yearLabel
+			// 
+			this.yearLabel.AutoSize = true;
+			this.yearLabel.Location = new System.Drawing.Point(44, 66);
+			this.yearLabel.Name = "yearLabel";
+			this.yearLabel.Size = new System.Drawing.Size(44, 17);
+			this.yearLabel.TabIndex = 19;
+			this.yearLabel.Text = "Jaren";
+			// 
+			// mileniaLabel
+			// 
+			this.mileniaLabel.AutoSize = true;
+			this.mileniaLabel.Location = new System.Drawing.Point(44, 39);
+			this.mileniaLabel.Name = "mileniaLabel";
+			this.mileniaLabel.Size = new System.Drawing.Size(62, 17);
+			this.mileniaLabel.TabIndex = 18;
+			this.mileniaLabel.Text = "Eeuwen:";
 			// 
 			// secondCount
 			// 
@@ -243,83 +307,21 @@
 			this.yearCount.TabIndex = 13;
 			this.yearCount.Text = "0";
 			// 
-			// mileniaLabel
+			// label1
 			// 
-			this.mileniaLabel.AutoSize = true;
-			this.mileniaLabel.Location = new System.Drawing.Point(44, 39);
-			this.mileniaLabel.Name = "mileniaLabel";
-			this.mileniaLabel.Size = new System.Drawing.Size(62, 17);
-			this.mileniaLabel.TabIndex = 18;
-			this.mileniaLabel.Text = "Eeuwen:";
-			// 
-			// yearLabel
-			// 
-			this.yearLabel.AutoSize = true;
-			this.yearLabel.Location = new System.Drawing.Point(44, 66);
-			this.yearLabel.Name = "yearLabel";
-			this.yearLabel.Size = new System.Drawing.Size(44, 17);
-			this.yearLabel.TabIndex = 19;
-			this.yearLabel.Text = "Jaren";
-			// 
-			// monthLabel
-			// 
-			this.monthLabel.AutoSize = true;
-			this.monthLabel.Location = new System.Drawing.Point(44, 93);
-			this.monthLabel.Name = "monthLabel";
-			this.monthLabel.Size = new System.Drawing.Size(67, 17);
-			this.monthLabel.TabIndex = 20;
-			this.monthLabel.Text = "Maanden";
-			// 
-			// dayLabel
-			// 
-			this.dayLabel.AutoSize = true;
-			this.dayLabel.Location = new System.Drawing.Point(44, 124);
-			this.dayLabel.Name = "dayLabel";
-			this.dayLabel.Size = new System.Drawing.Size(50, 17);
-			this.dayLabel.TabIndex = 21;
-			this.dayLabel.Text = "Dagen";
-			// 
-			// hourLabel
-			// 
-			this.hourLabel.AutoSize = true;
-			this.hourLabel.Location = new System.Drawing.Point(44, 152);
-			this.hourLabel.Name = "hourLabel";
-			this.hourLabel.Size = new System.Drawing.Size(39, 17);
-			this.hourLabel.TabIndex = 22;
-			this.hourLabel.Text = "Uren";
-			// 
-			// minuteLabel
-			// 
-			this.minuteLabel.AutoSize = true;
-			this.minuteLabel.Location = new System.Drawing.Point(44, 179);
-			this.minuteLabel.Name = "minuteLabel";
-			this.minuteLabel.Size = new System.Drawing.Size(58, 17);
-			this.minuteLabel.TabIndex = 23;
-			this.minuteLabel.Text = "Minuten";
-			// 
-			// secondLabel
-			// 
-			this.secondLabel.AutoSize = true;
-			this.secondLabel.Location = new System.Drawing.Point(44, 205);
-			this.secondLabel.Name = "secondLabel";
-			this.secondLabel.Size = new System.Drawing.Size(72, 17);
-			this.secondLabel.TabIndex = 15;
-			this.secondLabel.Text = "Seconden";
-			// 
-			// monthCount
-			// 
-			this.monthCount.AutoSize = true;
-			this.monthCount.Location = new System.Drawing.Point(153, 93);
-			this.monthCount.Name = "monthCount";
-			this.monthCount.Size = new System.Drawing.Size(16, 17);
-			this.monthCount.TabIndex = 24;
-			this.monthCount.Text = "0";
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(46, 127);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(100, 17);
+			this.label1.TabIndex = 14;
+			this.label1.Text = "2. Berekening:";
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(531, 586);
+			this.Controls.Add(this.label1);
 			this.Controls.Add(this.groupBoxTime);
 			this.Controls.Add(this.buttonClear);
 			this.Controls.Add(this.buttonRecursie);
@@ -327,7 +329,6 @@
 			this.Controls.Add(this.labelAnswerFour);
 			this.Controls.Add(this.labelQuestionFour);
 			this.Controls.Add(this.labelAnswerThree);
-			this.Controls.Add(this.labelQuestionTwo);
 			this.Controls.Add(this.textBoxCountOne);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.buttonForLoop);
@@ -349,7 +350,6 @@
 		private System.Windows.Forms.Button buttonForLoop;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.TextBox textBoxCountOne;
-		private System.Windows.Forms.Label labelQuestionTwo;
 		private System.Windows.Forms.Label labelAnswerThree;
 		private System.Windows.Forms.Label labelQuestionFour;
 		private System.Windows.Forms.Label labelAnswerFour;
@@ -371,6 +371,7 @@
 		private System.Windows.Forms.Label mileniaLabel;
 		private System.Windows.Forms.Label secondLabel;
 		private System.Windows.Forms.Label monthCount;
+		private System.Windows.Forms.Label label1;
 	}
 }
 
