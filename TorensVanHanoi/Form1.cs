@@ -192,9 +192,9 @@ namespace TorensVanHanoi
 			ulong schijven;
 			bool gelukt = ulong.TryParse(textBoxCountOne.Text, out schijven);
 
-			if (!gelukt)
+			if (!gelukt || schijven < 1 || schijven > 64)
 			{
-				
+				MessageBox.Show("Invoer is niet geldig!");	
 			}
 
 			else
